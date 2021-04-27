@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     bool alive = true;
-    public float speed = 6;
+    public float speed = 6.5f;
     public float speedIncreasePerPoint = 0.1f;
     float horizontalInput;
     [SerializeField] Rigidbody rb;
     [SerializeField] float horizontalMultiplier = 2;
     [SerializeField] float jumpForce = 600f;
     [SerializeField] LayerMask groundMask;
+    [SerializeField] Animator animatorController;
 
     void FixedUpdate()
     {
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         alive = false;
+        animatorController.SetBool("Hit", true);
         Invoke("Restart", 2);
     }
 
@@ -55,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded)
         {
             //if we are, then jump
+            animatorController.SetBool("Jump", true);
             rb.AddForce(Vector3.up * jumpForce);
         }
     }

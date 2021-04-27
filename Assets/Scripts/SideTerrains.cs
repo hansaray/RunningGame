@@ -4,6 +4,7 @@ public class SideTerrains : MonoBehaviour
 {
 
     [SerializeField] GameObject treePrefab;
+    [SerializeField] GameObject redTreePrefab;
     //[SerializeField] GameObject coinPrefab;
 
     void Start()
@@ -13,10 +14,16 @@ public class SideTerrains : MonoBehaviour
 
     public void SpawnTrees()
     {
-        int treesToSpawn = Random.Range(0, 3);
+        int treesToSpawn = Random.Range(0, 2);
+        int type = Random.Range(0, 2);
+        GameObject finalPrefab = treePrefab;
         for (int i = 0; i < treesToSpawn; i++)
         {
-            GameObject temp = Instantiate(treePrefab, transform);
+            if(type >= 1)
+            {
+                finalPrefab = redTreePrefab;
+            }
+            GameObject temp = Instantiate(finalPrefab, transform);
             temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
         }
     }

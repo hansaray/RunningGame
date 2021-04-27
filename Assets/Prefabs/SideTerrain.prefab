@@ -91,3 +91,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treePrefab: {fileID: 7213781341241425860, guid: f0214dd2862f54c6b9e6c6d8097920ca,
     type: 3}
+  redTreePrefab: {fileID: 4481145091017450418, guid: be654c02a5088484da22d15cf98491ac,
+    type: 3}

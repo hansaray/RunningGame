@@ -45,6 +45,15 @@ public class SideTerrains : MonoBehaviour
         }
 
         point.y = 1;
+
+        if(point.x < collider.bounds.min.x+1.5)
+        {
+            point.x += 1;
+        }else if(point.x > collider.bounds.max.x-1.5)
+        {
+            point.x += -1;
+        }
+
         return point;
     }
 }

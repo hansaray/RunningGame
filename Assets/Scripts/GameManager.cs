@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
     public static GameManager inst;
     [SerializeField] Text scoreText;
     [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] GameOverScreen gameOverScreen;
+
+    public void GameOver()
+    {
+        gameOverScreen.Setup(score);
+    }
 
     public void IncrementScore()
     {
@@ -19,16 +25,5 @@ public class GameManager : MonoBehaviour
     {
         inst = this;
         Application.targetFrameRate = 60;
-    }
-
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
     }
 }

@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
 
     void Update()
@@ -30,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-        if(transform.position.y < -5) // asagi düserse
+        if(transform.position.y < -5) // if it falls down
         {
             Die();
         }
@@ -40,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
     {
         alive = false;
         animatorController.SetBool("Hit", true);
-        Invoke("Restart", 2);
+        GameManager.inst.GameOver();
+        //Invoke("Restart", 2);
     }
 
     void Restart()

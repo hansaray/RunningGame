@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{B2EA9F77-4955-236C-6129-FF858F727ECF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameOverScreen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SaveSystem.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="18" Column="10" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="6" Column="12" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="2" Column="1" />
       <File FileName="Assets/Scripts/Obstacle.cs" />
       <File FileName="Assets/Scripts/Coin.cs" />
-      <File FileName="Assets/Scripts/GroundTile.cs" Line="77" Column="6" />
+      <File FileName="Assets/Scripts/GroundTile.cs" />
       <File FileName="Assets/Scripts/GroundSpawner.cs" />
       <File FileName="Assets/Scripts/CameraFollow.cs" />
-      <File FileName="Assets/Scripts/SideTerrains.cs" Line="54" Column="27" />
-      <File FileName="Assets/Scripts/GameOverScreen.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/SideTerrains.cs" />
+      <File FileName="Assets/Scripts/GameOverScreen.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/PauseScreen.cs" Line="32" Column="12" />
+      <File FileName="Assets/Scripts/PlayerData.cs" Line="4" Column="22" />
+      <File FileName="Assets/Scripts/SaveSystem.cs" Line="5" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +21,7 @@
           <Node name="RunningGame" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameOverScreen.cs" selected="True" />
+                <Node name="SaveSystem.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f412a5c8-8949-4b0a-9b81-b6520d7f4b0b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b83b1a29-4141-4cd5-a34b-413cb9677703" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
